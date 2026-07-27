@@ -1,0 +1,10 @@
+matplotlib
+bcrypt
+argon2-cffi
+passlib
+flask
+pandas
+numpy
+requests
+pyotp
+fpdf

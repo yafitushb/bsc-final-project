@@ -1,0 +1,61 @@
+{
+  "group_seed": 123456789,
+
+  "users": {
+    "file": "users.json"
+  },
+
+  "experiment": {
+    "name": "sha256_captcha_pepper",
+    "max_attempts": 50000
+  },
+
+  "attack": {
+    "type": "bruteforce",
+    "target_user": "user01",
+    "password_list": "wordlist.txt",
+    "max_attempts": 50000,
+    "spraying_user_file": null
+  },
+
+  "hashing": {
+    "mode": "sha256",
+    "sha256": {
+      "salt_length": 16
+    },
+    "argon2id": {
+      "time_cost": 1,
+      "memory_cost": 65536,
+      "parallelism": 1
+    },
+    "pepper": "MY_SECRET_PEPPER"
+  },
+
+  "protections": {
+    "rate_limit": {
+      "enabled": false,
+      "max_attempts_per_second": 20
+    },
+    "lockout": {
+      "enabled": false,
+      "threshold": 5,
+      "lockout_seconds": 1800
+    },
+    "captcha": {
+      "enabled": true,
+      "trigger_after_failures": 3
+    },
+    "totp": {
+      "enabled": false,
+      "window": 1
+    },
+    "pepper": {
+        "enabled": true
+    }
+  },
+
+  "logging": {
+    "output_file": "logs/attempts_sha256_captcha_pepper.log",
+    "include_latency": true
+  }
+}

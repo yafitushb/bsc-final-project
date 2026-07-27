@@ -1,0 +1,75 @@
+{
+  "group_seed": 123456789,
+
+  "experiment": {
+    "name": "sha256_rate_limit_pepper_totp",
+    "max_attempts": 50000
+  },
+
+  "attack": {
+    "type": "bruteforce",
+    "target_user": "user21",
+    "password_list": "wordlist.txt",
+    "max_attempts": 50000,
+    "spraying_user_file": null
+  },
+
+  "hashing": {
+    "mode": "sha256",
+
+    "sha256": {
+      "salt_length": 16
+    },
+
+    "bcrypt": {
+      "cost": 12
+    },
+
+    "argon2id": {
+      "time_cost": 1,
+      "memory_cost": 65536,
+      "parallelism": 1
+    },
+
+    "pepper_value": "<PEPPER_VALUE>"
+  },
+
+  "protections": {
+    "rate_limit": {
+      "enabled": true,
+      "max_attempts_per_second": 3
+    },
+
+    "lockout": {
+      "enabled": false,
+      "threshold": 5,
+      "lockout_seconds": 60
+    },
+
+    "captcha": {
+      "enabled": false,
+      "trigger_after_failures": 3
+    },
+
+    "totp": {
+      "enabled": true,
+      "window": 1
+    },
+
+    "pepper": {
+      "enabled": true,
+      "pepper_value": "<PEPPER_VALUE>"
+    }
+  },
+
+  "users": {
+    "file": "users.json",
+    "strength_category": "mixed"
+  },
+
+  "logging": {
+    "output_file": "attempts_sha256_rate_limit_pepper_totp.log",
+    "include_latency": true,
+    "include_protection_flags": true
+  }
+}
