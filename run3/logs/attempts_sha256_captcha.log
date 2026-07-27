@@ -1,0 +1,1 @@
+{"timestamp": 1767819379.195001, "username": "user01", "password": "Password1!", "result": "success", "reason": "password_ok", "hash_mode": "sha256", "experiment": "sha256_captcha", "latency_ms": 1.2127000372856855}

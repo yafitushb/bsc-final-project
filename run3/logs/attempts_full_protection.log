@@ -1,0 +1,1 @@
+{"timestamp": 1767819378.7994359, "username": "user01", "password": "Password1!", "result": "success", "reason": "password_ok", "hash_mode": "argon2id", "experiment": "full_protection", "latency_ms": 557.1190998889506}

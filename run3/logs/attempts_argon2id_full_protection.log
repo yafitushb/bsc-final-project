@@ -1,0 +1,5 @@
+{"timestamp": 1767819282.0337322, "username": "user21", "password": "Password1!", "result": "fail", "reason": "wrong_password", "hash_mode": "argon2id", "experiment": "argon2id_full_protection", "latency_ms": 175.28610001318157}
+{"timestamp": 1767819283.0382702, "username": "user21", "password": "Password2!", "result": "fail", "reason": "rate_limited", "hash_mode": "argon2id", "experiment": "argon2id_full_protection", "latency_ms": 1002.7069000061601}
+{"timestamp": 1767819283.1829402, "username": "user21", "password": "Password3!", "result": "fail", "reason": "wrong_password", "hash_mode": "argon2id", "experiment": "argon2id_full_protection", "latency_ms": 143.96920008584857}
+{"timestamp": 1767819284.1857674, "username": "user21", "password": "Password4!", "result": "fail", "reason": "rate_limited", "hash_mode": "argon2id", "experiment": "argon2id_full_protection", "latency_ms": 1001.3663000427186}
+{"timestamp": 1767819284.3148985, "username": "user21", "password": "Password5!", "result": "fail", "reason": "captcha_required", "hash_mode": "argon2id", "experiment": "argon2id_full_protection", "latency_ms": 128.9645000360906}

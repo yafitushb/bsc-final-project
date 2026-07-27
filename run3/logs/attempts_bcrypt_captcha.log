@@ -1,0 +1,10 @@
+{"timestamp": 1767819316.6414344, "username": "user11", "password": "Password1!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 552.3989999201149}
+{"timestamp": 1767819317.139626, "username": "user11", "password": "Password2!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 495.91950001195073}
+{"timestamp": 1767819317.684374, "username": "user11", "password": "Password3!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 543.5246999841183}
+{"timestamp": 1767819318.1717677, "username": "user11", "password": "Password4!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 486.34970001876354}
+{"timestamp": 1767819318.7105558, "username": "user11", "password": "Password5!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 537.3545000329614}
+{"timestamp": 1767819319.138229, "username": "user11", "password": "Password6!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 426.98629992082715}
+{"timestamp": 1767819319.6336803, "username": "user11", "password": "Password7!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 495.07490010000765}
+{"timestamp": 1767819320.0739763, "username": "user11", "password": "Password8!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 439.2678998410702}
+{"timestamp": 1767819320.583038, "username": "user11", "password": "Password9!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 508.67540016770363}
+{"timestamp": 1767819321.2660549, "username": "user11", "password": "Password10!", "result": "fail", "reason": "captcha_required", "hash_mode": "bcrypt", "experiment": "bcrypt_captcha", "latency_ms": 680.5875001009554}

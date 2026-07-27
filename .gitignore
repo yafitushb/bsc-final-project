@@ -1,4 +1,16 @@
+# Virtual Environment
 .venv/
-__pycache__/
+
+# IDE & OS Settings
 .vscode/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Heavy Datasets
 rockyou.txt
+
+# Temp files & auto-generated execution runs
+runs/
+config_temp.json

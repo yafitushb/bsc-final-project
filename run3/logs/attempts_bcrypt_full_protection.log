@@ -1,0 +1,5 @@
+{"timestamp": 1767819337.8859906, "username": "user21", "password": "Password1!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_full_protection", "latency_ms": 772.9984000325203}
+{"timestamp": 1767819338.8906713, "username": "user21", "password": "Password2!", "result": "fail", "reason": "rate_limited", "hash_mode": "bcrypt", "experiment": "bcrypt_full_protection", "latency_ms": 1002.6877999771386}
+{"timestamp": 1767819339.3374276, "username": "user21", "password": "Password3!", "result": "fail", "reason": "wrong_password", "hash_mode": "bcrypt", "experiment": "bcrypt_full_protection", "latency_ms": 445.8686001598835}
+{"timestamp": 1767819340.339319, "username": "user21", "password": "Password4!", "result": "fail", "reason": "rate_limited", "hash_mode": "bcrypt", "experiment": "bcrypt_full_protection", "latency_ms": 1000.8743000216782}
+{"timestamp": 1767819340.7445602, "username": "user21", "password": "Password5!", "result": "fail", "reason": "captcha_required", "hash_mode": "bcrypt", "experiment": "bcrypt_full_protection", "latency_ms": 403.8761998526752}

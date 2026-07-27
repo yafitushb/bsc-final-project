@@ -1,0 +1,5 @@
+{"timestamp": 1767819390.8154998, "username": "user21", "password": "Password1!", "result": "fail", "reason": "wrong_password", "hash_mode": "sha256", "experiment": "sha256_rate_limit_pepper_totp", "latency_ms": 1.5180001500993967}
+{"timestamp": 1767819391.8187385, "username": "user21", "password": "Password2!", "result": "fail", "reason": "rate_limited", "hash_mode": "sha256", "experiment": "sha256_rate_limit_pepper_totp", "latency_ms": 1001.755699981004}
+{"timestamp": 1767819391.8197174, "username": "user21", "password": "Password3!", "result": "fail", "reason": "wrong_password", "hash_mode": "sha256", "experiment": "sha256_rate_limit_pepper_totp", "latency_ms": 0.846700044348836}
+{"timestamp": 1767819392.8228838, "username": "user21", "password": "Password4!", "result": "fail", "reason": "rate_limited", "hash_mode": "sha256", "experiment": "sha256_rate_limit_pepper_totp", "latency_ms": 1001.4526001177728}
+{"timestamp": 1767819392.8248847, "username": "user21", "password": "Password5!", "result": "fail", "reason": "captcha_required", "hash_mode": "sha256", "experiment": "sha256_rate_limit_pepper_totp", "latency_ms": 0.906399916857481}
