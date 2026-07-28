@@ -1,4 +1,3 @@
-Markdown
 # 🔐 Authentication Security Analysis Project
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -24,6 +23,7 @@ A modular authentication simulation environment designed to test and analyze the
 
 ## 📁 Project Structure
 
+```text
 ├── src/                          # Application source code & scripts
 │   ├── main.py                   # Entry point for the analysis tool (Runs logic & report gen)
 │   ├── auth_server.py            # The authentication server (Flask)
@@ -54,6 +54,8 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
+```
+
 🧪 Experiments Included
 1. Hash Mode & Protection Experiments
 SHA256 — No Protection
