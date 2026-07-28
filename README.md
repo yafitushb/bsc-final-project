@@ -24,7 +24,6 @@ A modular authentication simulation environment designed to test and analyze the
 
 ## 📁 Project Structure
 
-```text
 ├── src/                          # Application source code & scripts
 │   ├── main.py                   # Entry point for the analysis tool (Runs logic & report gen)
 │   ├── auth_server.py            # The authentication server (Flask)
@@ -40,7 +39,7 @@ A modular authentication simulation environment designed to test and analyze the
 │   ├── run_all.bat               # Batch script for Windows automation
 │   └── run_experiment.ps1        # PowerShell script for single experiment execution
 │
-├── configs/                      # Configuration files (e.g., config_sha256_no_protection.json)
+├── configs/                      # Configuration files (e.g. config_sha256_no_protection.json)
 │   └── config_*.json
 │
 ├── data/                         # Datasets & password dictionaries
