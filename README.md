@@ -57,6 +57,7 @@ A modular authentication simulation environment designed to test and analyze the
 ```
 
 🧪 Experiments Included
+
 1. Hash Mode & Protection Experiments
 SHA256 — No Protection
 
@@ -88,6 +89,7 @@ user27 – user29 → Strong + TOTP
 user30 → Mixed / Random strength
 
 📊 Output Files
+
 logs/: Contains all raw log files (JSON lines) generated during the experiments.
 
 output/graphs/: Contains all PNG graphs created by the analysis logic.
@@ -95,6 +97,7 @@ output/graphs/: Contains all PNG graphs created by the analysis logic.
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
 ⚙️ Installation
+
 1. Create Virtual Environment
 Bash
 python -m venv .venv
@@ -104,8 +107,10 @@ PowerShell
 3. Install Dependencies
 Bash
 pip install -r requirements.txt
+
 🚀 How to Run
-4. Generate Required Data
+
+5. Generate Required Data
 Generate the dictionary and user lists required for the attacks:
 
 Bash
@@ -134,7 +139,9 @@ Generates the interactive HTML report:
 
 Bash
 python main.py
+
 🔄 Summary of Execution Order
+
 Option A: Complete Run from Scratch
 For a complete run from scratch, execute these commands in order:
 
@@ -144,6 +151,7 @@ python run_combinations.py
 python run_experiments.py
 python analyze.py
 python main.py
+
 💡 Tip: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run in /output & /logs to prevent statistical and graphical errors.
 
 Option B: Batch Automation
