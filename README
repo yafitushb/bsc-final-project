@@ -1,6 +1,6 @@
 | Live Demo & Telemetry Analytics |
 | :---: |
-| ![Demo](https://raw.githubusercontent.com/yafitushb/bsc-final-project/main/demo.gif) |
+| ![Demo](https://raw.githubusercontent.com/yafitushb/bsc-final-project/main/assets/demo.gif) |
 
 # Authentication Security Analysis Project
 
@@ -16,31 +16,36 @@
 
 # Project Structure 
 
-├── main.py                  # Entry point for the analysis tool (Runs logic & report gen)
-├── auth_server.py           # The authentication server (Flask)
-├── attacker.py              # The simulation engine for attacks
-├── run_experiments.py       # Orchestrates the various experiment scenarios
-├── create_data.py           # Generates synthetic users.json and wordlist.txt
-├── run_combinations.py      # Runs combination tests for protections
-├── create_wordlist.py       # Generates the wordlist for brute force attacks
-├── logic.py                 # Data processing and graph generation logic
-├── report_gen.py            # HTML report generation logic
-├── analyze.py               # Standalone analysis script
-├── test_env.py              # Test script for environment setup
+├── src/                          # Application source code & scripts
+│   ├── main.py                   # Entry point for the analysis tool (Runs logic & report gen)
+│   ├── auth_server.py            # The authentication server (Flask)
+│   ├── attacker.py               # The simulation engine for attacks
+│   ├── run_experiments.py        # Orchestrates the various experiment scenarios
+│   ├── create_data.py            # Generates synthetic users.json and wordlist.txt
+│   ├── run_combinations.py       # Runs combination tests for protections
+│   ├── create_wordlist.py        # Generates the wordlist for brute force attacks
+│   ├── logic.py                  # Data processing and graph generation logic
+│   ├── report_gen.py             # HTML report generation logic
+│   ├── analyze.py                # Standalone analysis script
+│   ├── test_env.py               # Test script for environment setup
+│   ├── run_all.bat               # Batch script for Windows automation
+│   └── run_experiment.ps1        # PowerShell script for single experiment execution
 │
-├── run_all.bat              # Batch script for Windows automation
-├── run_experiment.ps1       # PowerShell script for single experiment execution
-├── requirements.txt         # List of Python dependencies
-├── logs/                    # Directory for raw JSON logs 
-│   └── attempts_*.log       # Individual experiment logs
+├── configs/                      # Configuration files (e.g., config_sha256_no_protection.json)
+│   └── config_*.json
 │
-├── output/                  # Directory for analysis results 
-│   ├── graphs/              # Generated visualizations (PNG)
-│   └── analysis_report.html # Final interactive report
+├── data/                         # Datasets & password dictionaries
+│   ├── users.json                # User dataset (30 users, varied strength)
+│   └── wordlist.txt              # Dictionary for brute-force attacks
 │
-├── config_*.json            # Configuration files (e.g., config_sha256_no_protection.json)
-├── users.json               # User dataset (30 users, varied strength)
-└── wordlist.txt             # Dictionary for brute-force attacks
+├── logs/                         # Directory for raw JSON logs 
+│   └── attempts_*.log            # Individual experiment logs
+│
+├── output/                       # Directory for analysis results 
+│   ├── graphs/                   # Generated visualizations (PNG)
+│   └── analysis_report.html      # Final interactive report
+│
+└── requirements.txt              # List of Python dependencies
 
 # Experiments Included
 
@@ -80,7 +85,7 @@ python -m venv .venv
 
 pip install -r requirements.txt
 
-#===============================================================
+#==================================================================================================
 # 4. How to Run 
 # Generate the dictionary and user lists required for the attacks.
 
@@ -95,15 +100,15 @@ python run_combinations.py
 # Run Standard Experiments
 
 python run_experiments.py
-#============================================================
+#==================================================================================================
 
 # 5.2 OR
 # Alternatively, run everything at once using the batch file
 
 .\run_all.bat
-#============================================================
+#==================================================================================================
 # 6. Run Analysis (Generates Graphs)
-#============================================================
+#==================================================================================================
 
 python analyze.py
 
@@ -111,7 +116,7 @@ python analyze.py
 
 python main.py
 
-#==============================================================
+#==================================================================================================
 # Summary of Execution Order
 # 1. For a complete run from scratch, execute these commands in order:
 
@@ -125,7 +130,7 @@ python analyze.py
 
 python main.py
 
-#==============================================
+#==================================================================================================
 # Before performing a new full run, it is recommended to delete or move the logs and graphs folders
 # from the previousrun to /output & /logs in order to prevent statistical and graphical errors.
 
