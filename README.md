@@ -54,7 +54,9 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
-🧪 Experiments Included
+
+## 🧪 Experiments Included
+
 1. Hash Mode & Protection Experiments
 SHA256 — No Protection
 
@@ -85,69 +87,78 @@ user27 – user29 → Strong + TOTP
 
 user30 → Mixed / Random strength
 
-📊 Output Files
+## 📊 Output Files
 logs/: Contains all raw log files (JSON lines) generated during the experiments.
 
 output/graphs/: Contains all PNG graphs created by the analysis logic.
 
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
-⚙️ Installation
-1. Create Virtual Environment
-Bash
+# 1. Create Virtual Environment
+
 python -m venv .venv
-2. Activate Environment
-PowerShell
+
+# 2. Activate
+
 .\.venv\Scripts\activate
-3. Install Dependencies
-Bash
+
+# 3. Install Dependencies 
+
 pip install -r requirements.txt
-🚀 How to Run
-4. Generate Required Data
-Generate the dictionary and user lists required for the attacks:
 
-Bash
+#========================================================================================
+# 4. How to Run 
+# Generate the dictionary and user lists required for the attacks.
+
 python create_wordlist.py
-5. Execute Attack Scenarios
-Execute the attack scenarios (combination tests & the main experiments separately):
 
-Run Combinations:
-Bash
+# 5. Execute the attack scenarios (combination tests & the main experiments separately.
+# Run Combinations
+
 python run_combinations.py
-OR Run Standard Experiments:
-Bash
+
+# 5.1 OR
+# Run Standard Experiments
+
 python run_experiments.py
-OR Run Everything via Batch:
-Alternatively, run everything at once using the batch file:
+#========================================================================================
 
-DOS
+# 5.2 OR
+# Alternatively, run everything at once using the batch file
+
 .\run_all.bat
-6. Run Analysis
-Generates output graphs and metrics:
+#========================================================================================
+# 6. Run Analysis (Generates Graphs)
+#========================================================================================
 
-Bash
 python analyze.py
-7. Generate Final Report
-Generates the interactive HTML report:
 
-Bash
+# 7. Generate Final Report (HTML):
+
 python main.py
-🔄 Summary of Execution Order
-Option A: Complete Run from Scratch
-For a complete run from scratch, execute these commands in order:
 
-Bash
+#========================================================================================
+# Summary of Execution Order
+# 1. For a complete run from scratch, execute these commands in order:
+
 python create_wordlist.py
+
 python run_combinations.py
+
 python run_experiments.py
+
 python analyze.py
+
 python main.py
-💡 Tip: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run in /output & /logs to prevent statistical and graphical errors.
 
-Option B: Batch Automation
-Or simply run the batch file and analysis workflow:
+#========================================================================================
+# Before performing a new full run, it is recommended to delete or move the logs and graphs folders
+# from the previousrun to /output & /logs in order to prevent statistical and graphical errors.
 
-Bash
+# 2. OR simply run the batch file:
+
 .\run_all.bat
+
 python analyze.py
+
 python main.py
