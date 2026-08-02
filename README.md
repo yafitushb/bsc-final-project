@@ -1,4 +1,3 @@
-Markdown
 # 🔐 Authentication Security Analysis Project
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -24,6 +23,7 @@ A modular authentication simulation environment designed to test and analyze the
 
 ## 📁 Project Structure
 
+```text
 ├── src/                          # Application source code & scripts
 │   ├── main.py                   # Entry point for the analysis tool (Runs logic & report gen)
 │   ├── auth_server.py            # The authentication server (Flask)
@@ -54,8 +54,14 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
+<<<<<<< HEAD
 
 ## 🧪 Experiments Included
+=======
+```
+
+🧪 Experiments Included
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 
 1. Hash Mode & Protection Experiments
 SHA256 — No Protection
@@ -87,15 +93,27 @@ user27 – user29 → Strong + TOTP
 
 user30 → Mixed / Random strength
 
+<<<<<<< HEAD
 ## 📊 Output Files
+=======
+📊 Output Files
+
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 logs/: Contains all raw log files (JSON lines) generated during the experiments.
 
 output/graphs/: Contains all PNG graphs created by the analysis logic.
 
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
+<<<<<<< HEAD
 # 1. Create Virtual Environment
 
+=======
+⚙️ Installation
+
+1. Create Virtual Environment
+Bash
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 python -m venv .venv
 
 # 2. Activate
@@ -105,6 +123,14 @@ python -m venv .venv
 # 3. Install Dependencies 
 
 pip install -r requirements.txt
+<<<<<<< HEAD
+=======
+
+🚀 How to Run
+
+5. Generate Required Data
+Generate the dictionary and user lists required for the attacks:
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 
 #========================================================================================
 # 4. How to Run 
@@ -136,6 +162,14 @@ python analyze.py
 # 7. Generate Final Report (HTML):
 
 python main.py
+<<<<<<< HEAD
+=======
+
+🔄 Summary of Execution Order
+
+Option A: Complete Run from Scratch
+For a complete run from scratch, execute these commands in order:
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 
 #========================================================================================
 # Summary of Execution Order
@@ -150,6 +184,11 @@ python run_experiments.py
 python analyze.py
 
 python main.py
+<<<<<<< HEAD
+=======
+
+💡 Tip: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run in /output & /logs to prevent statistical and graphical errors.
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 
 #========================================================================================
 # Before performing a new full run, it is recommended to delete or move the logs and graphs folders
@@ -160,5 +199,9 @@ python main.py
 .\run_all.bat
 
 python analyze.py
+<<<<<<< HEAD
 
 python main.py
+=======
+python main.py
+>>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
