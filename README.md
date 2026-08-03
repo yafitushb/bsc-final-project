@@ -24,7 +24,7 @@ A modular authentication simulation environment designed to test and analyze the
 ## 📁 Project Structure
 
 ```text
-├── docs/                          # Academic documentation & presentation
+├── docs/                                             # Academic documentation & presentation
 │   ├── Research_Report_Authentication_Security.pdf   # Full research paper & empirical analysis
 │   └── Presentation_Authentication_Security.pdf      # Visual presentation of findings & metrics
 │
