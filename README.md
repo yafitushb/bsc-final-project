@@ -26,12 +26,8 @@ A modular authentication simulation environment designed to test and analyze the
 This project includes a comprehensive academic research report and a summary presentation analyzing authentication mechanisms, hashing performance, and attack resistance.
 
 * 📄 **[Full Research Report (PDF)](./docs/Research_Report_Authentication_Security.pdf)**
-  * **In-depth Analysis:** Empirical comparison between SHA-256, Bcrypt, and Argon2id.
-  * **Defense Mechanisms:** Evaluation of Rate Limiting, Account Lockout, CAPTCHA, TOTP, Pepper, and Clock Drift synchronization (90ms).
-  * **Attack Vectors:** Detailed results from Brute-Force and Password Spraying simulations.
-
-* 📊 **[Download Project Presentation with Videos (PPTX)](./docs/Presentation_Authentication_Security.pptx)**
-  * **Visual Summary:** Key findings, hashing latency graphs, and trade-off analysis between security and system performance.
+* 👁️ **[View Presentation Online (PDF)](./docs/Presentation_Authentication_Security.pdf)** — *Fast browser preview (static slides)*
+* 🎬 **[Download Interactive Presentation (PPTX)](./docs/Presentation_Authentication_Security.pptx)** — *Full version with embedded demo videos (65MB)*
 
 ---
 
