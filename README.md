@@ -114,10 +114,7 @@ output/graphs/: Contains all PNG graphs created by the analysis logic.
 
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
-
-
-
-
+---
 
 ## ⚙️ Installation & Usage
 
