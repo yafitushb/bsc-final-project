@@ -24,6 +24,10 @@ A modular authentication simulation environment designed to test and analyze the
 ## 📁 Project Structure
 
 ```text
+├── docs/                          # Academic documentation & presentation
+│   ├── Research_Report_Authentication_Security.pdf   # Full research paper & empirical analysis
+│   └── Presentation_Authentication_Security.pdf      # Visual presentation of findings & metrics
+│
 ├── src/                          # Application source code & scripts
 │   ├── main.py                   # Entry point for the analysis tool (Runs logic & report gen)
 │   ├── auth_server.py            # The authentication server (Flask)
@@ -54,14 +58,9 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
-<<<<<<< HEAD
+
 
 ## 🧪 Experiments Included
-=======
-```
-
-🧪 Experiments Included
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 
 1. Hash Mode & Protection Experiments
 SHA256 — No Protection
@@ -93,115 +92,106 @@ user27 – user29 → Strong + TOTP
 
 user30 → Mixed / Random strength
 
-<<<<<<< HEAD
 ## 📊 Output Files
-=======
-📊 Output Files
 
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
 logs/: Contains all raw log files (JSON lines) generated during the experiments.
 
 output/graphs/: Contains all PNG graphs created by the analysis logic.
 
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
-<<<<<<< HEAD
-# 1. Create Virtual Environment
+---
 
-=======
-⚙️ Installation
+## 📄 Research & Documentation
 
-1. Create Virtual Environment
-Bash
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
+This project includes a comprehensive academic research report and a summary presentation analyzing authentication mechanisms, hashing performance, and attack resistance.
+
+* 📄 **[Full Research Report (PDF)](./docs/Research_Report_Authentication_Security.pdf)**
+  * **In-depth Analysis:** Empirical comparison between SHA-256, Bcrypt, and Argon2id.
+  * **Defense Mechanisms:** Evaluation of Rate Limiting, Account Lockout, CAPTCHA, TOTP, Pepper, and Clock Drift synchronization.
+  * **Attack Vectors:** Detailed results from Brute-Force and Password Spraying simulations[cite: 1, 2].
+
+* 📊 **[Project Presentation (PDF)](./docs/Presentation_Authentication_Security.pdf)**
+  * **Visual Summary:** Key findings, hashing latency graphs, and trade-off analysis between security and system performance.
+
+## ⚙️ Installation & Usage
+
+### 1. Create Virtual Environment:
+```bash
 python -m venv .venv
+```
 
-# 2. Activate
-
+### 2. Activate:
+```powershell
 .\.venv\Scripts\activate
+```
 
-# 3. Install Dependencies 
-
+### 3. Install Dependencies: 
+```bash
 pip install -r requirements.txt
-<<<<<<< HEAD
-=======
+```
 
-🚀 How to Run
-
-5. Generate Required Data
-Generate the dictionary and user lists required for the attacks:
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
-
-#========================================================================================
-# 4. How to Run 
-# Generate the dictionary and user lists required for the attacks.
-
+### 4. How to Run: 
+### Generate the dictionary and user lists required for the attacks.
+```bash
 python create_wordlist.py
+```
 
-# 5. Execute the attack scenarios (combination tests & the main experiments separately.
-# Run Combinations
-
+### 5. Execute the attack scenarios (combination tests & the main experiments separately.
+### Run Combinations:
+```bash
 python run_combinations.py
+```
 
-# 5.1 OR
-# Run Standard Experiments
-
+### 5.1 OR
+### Run Standard Experiments:
+```bash
 python run_experiments.py
-#========================================================================================
+```
 
-# 5.2 OR
-# Alternatively, run everything at once using the batch file
-
+### 5.2 OR
+### Alternatively, run everything at once using the batch file:
+```dos
 .\run_all.bat
-#========================================================================================
-# 6. Run Analysis (Generates Graphs)
-#========================================================================================
+```
 
+### 6. Run Analysis (Generates Graphs):
+```bash
 python analyze.py
+```
 
-# 7. Generate Final Report (HTML):
-
+### 7. Generate Final Report (HTML):
+```bash
 python main.py
-<<<<<<< HEAD
-=======
+```
 
-🔄 Summary of Execution Order
-
-Option A: Complete Run from Scratch
-For a complete run from scratch, execute these commands in order:
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
-
-#========================================================================================
-# Summary of Execution Order
-# 1. For a complete run from scratch, execute these commands in order:
-
+### Summary of Execution Order
+### 1. For a complete run from scratch, execute these commands in order:
+```bash
 python create_wordlist.py
-
+```
+```bash
 python run_combinations.py
-
+```
+```bash
 python run_experiments.py
-
+```
+```bash
 python analyze.py
-
+```
+```bash
 python main.py
-<<<<<<< HEAD
-=======
+```
 
-💡 Tip: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run in /output & /logs to prevent statistical and graphical errors.
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
+>  ⚠️ Note: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run to /output & /logs in order to prevent statistical and graphical errors.
 
-#========================================================================================
-# Before performing a new full run, it is recommended to delete or move the logs and graphs folders
-# from the previousrun to /output & /logs in order to prevent statistical and graphical errors.
-
-# 2. OR simply run the batch file:
-
+### 2. OR simply run the batch file:
+```dos
 .\run_all.bat
-
+```
+```bash
 python analyze.py
-<<<<<<< HEAD
-
+```
+```bash
 python main.py
-=======
-python main.py
->>>>>>> b56ef939669c60c56e808c4bc09a9542febcd2c0
+```
