@@ -96,52 +96,60 @@ output/graphs/: Contains all PNG graphs created by the analysis logic.
 
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
-##  ⚙️ Installation
+## ⚙️ Installation & Usage
 
-# 1. Create Virtual Environment
-
+### 1. Create Virtual Environment
+```bash
 python -m venv .venv
+```
 
 # 2. Activate
-
+```powershell
 .\.venv\Scripts\activate
+```
 
-# 3. Install Dependencies 
-
+### 3. Install Dependencies 
+```bash
 pip install -r requirements.txt
+```
 
 # 4. How to Run 
 # Generate the dictionary and user lists required for the attacks.
-
+```bash
 python create_wordlist.py
+```
 
 # 5. Execute the attack scenarios (combination tests & the main experiments separately.
 # Run Combinations
-
+```bash
 python run_combinations.py
+```
 
 # 5.1 OR
 # Run Standard Experiments
-
+```bash
 python run_experiments.py
+```
 
 # 5.2 OR
 # Alternatively, run everything at once using the batch file
-
+```dos
 .\run_all.bat
+```
 
 # 6. Run Analysis (Generates Graphs)
-
-
+```bash
 python analyze.py
+```
 
 # 7. Generate Final Report (HTML):
-
+```bash
 python main.py
+```
 
 # Summary of Execution Order
 # 1. For a complete run from scratch, execute these commands in order:
-
+```bash
 python create_wordlist.py
 
 python run_combinations.py
@@ -151,14 +159,16 @@ python run_experiments.py
 python analyze.py
 
 python main.py
+```
 
-# Before performing a new full run, it is recommended to delete or move the logs and graphs folders
-# from the previousrun to /output & /logs in order to prevent statistical and graphical errors.
+# ⚠️ Note: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run to /output & /logs in order to prevent statistical and graphical errors.
 
 # 2. OR simply run the batch file:
-
+```dos
 .\run_all.bat
-
+```
+```bash
 python analyze.py
 
 python main.py
+```
