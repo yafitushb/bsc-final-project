@@ -54,6 +54,7 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
+
 ```
 ## 🧪 Experiments Included
 
@@ -151,7 +152,9 @@ python main.py
 ```bash
 python create_wordlist.py
 ```
+```bash
 python run_combinations.py
+```
 ```bash
 python run_experiments.py
 ```
