@@ -28,36 +28,36 @@ A modular authentication simulation environment designed to test and analyze the
 │   ├── Research_Report_Authentication_Security.pdf   # Full research paper & empirical analysis
 │   └── Presentation_Authentication_Security.pdf      # Visual presentation of findings & metrics
 │
-├── src/                          # Application source code & scripts
-│   ├── main.py                   # Entry point for the analysis tool (Runs logic & report gen)
-│   ├── auth_server.py            # The authentication server (Flask)
-│   ├── attacker.py               # The simulation engine for attacks
-│   ├── run_experiments.py        # Orchestrates the various experiment scenarios
-│   ├── create_data.py            # Generates synthetic users.json and wordlist.txt
-│   ├── run_combinations.py       # Runs combination tests for protections
-│   ├── create_wordlist.py        # Generates the wordlist for brute force attacks
-│   ├── logic.py                  # Data processing and graph generation logic
-│   ├── report_gen.py             # HTML report generation logic
-│   ├── analyze.py                # Standalone analysis script
-│   ├── test_env.py               # Test script for environment setup
-│   ├── run_all.bat               # Batch script for Windows automation
-│   └── run_experiment.ps1        # PowerShell script for single experiment execution
+├── src/                                              # Application source code & scripts
+│   ├── main.py                                       # Entry point for the analysis tool (Runs logic & report gen)
+│   ├── auth_server.py                                # The authentication server (Flask)
+│   ├── attacker.py                                   # The simulation engine for attacks
+│   ├── run_experiments.py                            # Orchestrates the various experiment scenarios
+│   ├── create_data.py                                # Generates synthetic users.json and wordlist.txt
+│   ├── run_combinations.py                           # Runs combination tests for protections
+│   ├── create_wordlist.py                            # Generates the wordlist for brute force attacks
+│   ├── logic.py                                      # Data processing and graph generation logic
+│   ├── report_gen.py                                 # HTML report generation logic
+│   ├── analyze.py                                    # Standalone analysis script
+│   ├── test_env.py                                   # Test script for environment setup
+│   ├── run_all.bat                                   # Batch script for Windows automation
+│   └── run_experiment.ps1                            # PowerShell script for single experiment execution
 │
-├── configs/                      # Configuration files (e.g. config_sha256_no_protection.json)
+├── configs/                                          # Configuration files (e.g. config_sha256_no_protection.json)
 │   └── config_*.json
 │
-├── data/                         # Datasets & password dictionaries
-│   ├── users.json                # User dataset (30 users, varied strength)
-│   └── wordlist.txt              # Dictionary for brute-force attacks
+├── data/                                             # Datasets & password dictionaries
+│   ├── users.json                                    # User dataset (30 users, varied strength)
+│   └── wordlist.txt                                  # Dictionary for brute-force attacks
 │
-├── logs/                         # Directory for raw JSON logs 
-│   └── attempts_*.log            # Individual experiment logs
+├── logs/                                             # Directory for raw JSON logs 
+│   └── attempts_*.log                                # Individual experiment logs
 │
-├── output/                       # Directory for analysis results 
-│   ├── graphs/                   # Generated visualizations (PNG)
-│   └── analysis_report.html      # Final interactive report
+├── output/                                           # Directory for analysis results 
+│   ├── graphs/                                       # Generated visualizations (PNG)
+│   └── analysis_report.html                          # Final interactive report
 │
-└── requirements.txt              # List of Python dependencies
+└── requirements.txt                                  # List of Python dependencies
 
 
 ## 🧪 Experiments Included
