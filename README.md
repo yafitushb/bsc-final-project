@@ -54,7 +54,6 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
-
 ```
 ## 🧪 Experiments Included
 
@@ -103,7 +102,7 @@ output/analysis_report.html: The final interactive report including graphs, summ
 python -m venv .venv
 ```
 
-# 2. Activate
+### 2. Activate
 ```powershell
 .\.venv\Scripts\activate
 ```
@@ -113,62 +112,65 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-# 4. How to Run 
-# Generate the dictionary and user lists required for the attacks.
+### 4. How to Run 
+### Generate the dictionary and user lists required for the attacks.
 ```bash
 python create_wordlist.py
 ```
 
-# 5. Execute the attack scenarios (combination tests & the main experiments separately.
-# Run Combinations
+### 5. Execute the attack scenarios (combination tests & the main experiments separately.
+### Run Combinations
 ```bash
 python run_combinations.py
 ```
 
-# 5.1 OR
-# Run Standard Experiments
+### 5.1 OR
+### Run Standard Experiments
 ```bash
 python run_experiments.py
 ```
 
-# 5.2 OR
-# Alternatively, run everything at once using the batch file
+### 5.2 OR
+### Alternatively, run everything at once using the batch file
 ```dos
 .\run_all.bat
 ```
 
-# 6. Run Analysis (Generates Graphs)
+### 6. Run Analysis (Generates Graphs)
 ```bash
 python analyze.py
 ```
 
-# 7. Generate Final Report (HTML):
+### 7. Generate Final Report (HTML):
 ```bash
 python main.py
 ```
 
-# Summary of Execution Order
-# 1. For a complete run from scratch, execute these commands in order:
+### Summary of Execution Order
+### 1. For a complete run from scratch, execute these commands in order:
 ```bash
 python create_wordlist.py
-
+```
 python run_combinations.py
-
+```bash
 python run_experiments.py
-
+```
+```bash
 python analyze.py
-
+```
+```bash
 python main.py
 ```
 
-# ⚠️ Note: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run to /output & /logs in order to prevent statistical and graphical errors.
+>  ⚠️ Note: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run to /output & /logs in order to prevent statistical and graphical errors.
 
-# 2. OR simply run the batch file:
+### 2. OR simply run the batch file:
 ```dos
 .\run_all.bat
 ```
 ```bash
 python analyze.py
-
+```
+```bash
 python main.py
 ```
