@@ -117,9 +117,10 @@ output/analysis_report.html: The final interactive report including graphs, summ
 ### 1. Create Virtual Environment
 ```bash
 python -m venv .venv
+```
 
 ### 2. Activate:
-```powershell
+```bash
 .\.venv\Scripts\activate
 ```
  
@@ -148,7 +149,7 @@ python run_experiments.py
 
 ### 5.2 OR
 ### Alternatively, run everything at once using the batch file:
-```dos
+```bash
 .\run_all.bat
 ```
 
@@ -183,7 +184,7 @@ python main.py
 >  ⚠️ Note: Before performing a new full run, it is recommended to delete or move the logs and graphs folders from the previous run to /output & /logs in order to prevent statistical and graphical errors.
 
 ### 2. OR simply run the batch file:
-```dos
+```bash
 .\run_all.bat
 ```
 ```bash
