@@ -114,12 +114,13 @@ This project includes a comprehensive academic research report and a summary pre
 * 📊 **[Project Presentation (PDF)](./docs/Presentation_Authentication_Security.pdf)**
   * **Visual Summary:** Key findings, hashing latency graphs, and trade-off analysis between security and system performance.
 
+---
+
 ## ⚙️ Installation & Usage
 
-### 1. Create Virtual Environment:
+### 1. Create Virtual Environment
 ```bash
 python -m venv .venv
-```
 
 ### 2. Activate:
 ```powershell
