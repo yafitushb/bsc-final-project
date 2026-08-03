@@ -108,8 +108,8 @@ This project includes a comprehensive academic research report and a summary pre
 
 * 📄 **[Full Research Report (PDF)](./docs/Research_Report_Authentication_Security.pdf)**
   * **In-depth Analysis:** Empirical comparison between SHA-256, Bcrypt, and Argon2id.
-  * **Defense Mechanisms:** Evaluation of Rate Limiting, Account Lockout, CAPTCHA, TOTP, Pepper, and Clock Drift synchronization.
-  * **Attack Vectors:** Detailed results from Brute-Force and Password Spraying simulations[cite: 1, 2].
+  * **Defense Mechanisms:** Evaluation of Rate Limiting, Account Lockout, CAPTCHA, TOTP, Pepper, and Clock Drift synchronization (90ms).
+  * **Attack Vectors:** Detailed results from Brute-Force and Password Spraying simulations.
 
 * 📊 **[Project Presentation (PDF)](./docs/Presentation_Authentication_Security.pdf)**
   * **Visual Summary:** Key findings, hashing latency graphs, and trade-off analysis between security and system performance.
