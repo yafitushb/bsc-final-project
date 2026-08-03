@@ -58,8 +58,13 @@ A modular authentication simulation environment designed to test and analyze the
 │   └── analysis_report.html      # Final interactive report
 │
 └── requirements.txt              # List of Python dependencies
+<<<<<<< HEAD
 
 
+=======
+
+```
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ## 🧪 Experiments Included
 
 1. Hash Mode & Protection Experiments
@@ -100,6 +105,7 @@ output/graphs/: Contains all PNG graphs created by the analysis logic.
 
 output/analysis_report.html: The final interactive report including graphs, summaries, and timestamp.
 
+<<<<<<< HEAD
 ---
 
 ## 📄 Research & Documentation
@@ -117,45 +123,78 @@ This project includes a comprehensive academic research report and a summary pre
 ## ⚙️ Installation & Usage
 
 ### 1. Create Virtual Environment:
+=======
+## ⚙️ Installation & Usage
+
+### 1. Create Virtual Environment
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```bash
 python -m venv .venv
 ```
 
+<<<<<<< HEAD
 ### 2. Activate:
+=======
+### 2. Activate
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```powershell
 .\.venv\Scripts\activate
 ```
 
+<<<<<<< HEAD
 ### 3. Install Dependencies: 
+=======
+### 3. Install Dependencies 
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```bash
 pip install -r requirements.txt
 ```
 
+<<<<<<< HEAD
 ### 4. How to Run: 
+=======
+### 4. How to Run 
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ### Generate the dictionary and user lists required for the attacks.
 ```bash
 python create_wordlist.py
 ```
 
 ### 5. Execute the attack scenarios (combination tests & the main experiments separately.
+<<<<<<< HEAD
 ### Run Combinations:
+=======
+### Run Combinations
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```bash
 python run_combinations.py
 ```
 
 ### 5.1 OR
+<<<<<<< HEAD
 ### Run Standard Experiments:
+=======
+### Run Standard Experiments
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```bash
 python run_experiments.py
 ```
 
 ### 5.2 OR
+<<<<<<< HEAD
 ### Alternatively, run everything at once using the batch file:
+=======
+### Alternatively, run everything at once using the batch file
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```dos
 .\run_all.bat
 ```
 
+<<<<<<< HEAD
 ### 6. Run Analysis (Generates Graphs):
+=======
+### 6. Run Analysis (Generates Graphs)
+>>>>>>> f09e79d0363cdf4ab426eb13734196068b53508c
 ```bash
 python analyze.py
 ```
